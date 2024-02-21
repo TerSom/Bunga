@@ -41,6 +41,12 @@ body{
 .greetings > span:nth-child(5){
     animation-delay: .8s;
 }
+.greetings > span:nth-child(6){
+    animation-delay: .10s;
+}
+.greetings > span:nth-child(7){
+    animation-delay: .12s;
+}
 
 .description{
     font-size: 1.5rem;
@@ -52,6 +58,31 @@ body{
     font-size: 1rem;
     color: #111;
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn.shiny {
+    background-image: linear-gradient(to right, #2c0d9b, #35b1eb, #062888);
+    background-size: 200% auto;
+    transition: background-position 0.3s;
+  }
+
+  .btn.shiny:hover {
+    background-position: right center;
+  }
 
 @media screen and (max-width:574px){
     .greetings{
